@@ -1,0 +1,38 @@
+Question 1: What will be the outcome of the following program?
+
+public class A
+{
+    static
+    {
+        System.out.println(1);
+    }
+ 
+    static
+    {
+        System.out.println(2);
+    }
+ 
+    static
+    {
+        System.out.println(3);
+    }
+ 
+    public static void main(String[] args)
+    {
+        A a;
+    }
+
+
+Question 2: Assume a class Derv derived from a base class Base. Both classes contain a member function func() that takes no arguments. Write the definition for a member function of Derv that calls both the func()s.
+
+Question 3: What is method Overloading? Create a program of same 
+
+Question 4: Difference between interface and abstract class 
+
+Question 5: Difference between instance,static variable. Explain with a program.
+
+Question 6: What is Encapsulation? Create a simple program which has encapuslation
+
+
+
+

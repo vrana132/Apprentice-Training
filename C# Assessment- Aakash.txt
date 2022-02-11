@@ -1,0 +1,24 @@
+Question 1: What will be the output
+
+class A
+{
+    int i;
+ 
+    static
+    {
+        System.out.println(i);
+    }
+}
+
+Question 2: Create a class named 'Student' with String variable 'name' and integer variable 'roll_no'. Assign the value of roll_no as '2' and that of name as "John" by creating an object of the class Student.
+
+Question 3: Difference between interface and abstract class 
+
+Question 4: Difference between instance and local variable. Explain with a program.
+
+Question 5: What is Encapsulation? Create a simple program which has encapuslation
+
+Question 6: What is method overriding. Explain with an example
+
+
+
