@@ -1,0 +1,130 @@
+Ans:-1  
+Error because we cannot call non static variable in static block.
+Ans:-2
+class Solution{
+
+class Student {
+
+private String name; 
+private int roll_no;
+
+Student (int roll_no, String name) {
+
+this.name = name;
+
+this.roll_no = roll_no;
+}
+}
+public static void main(String[] args) throws Exception{
+
+Student student = new Student (2, "John");
+}
+}
+
+
+
+Ans:-3
+i> Abstract class can have implementation for some of its members or methods but
+ the interface can't have implementation for any of its members.
+
+ii> Abstract class members can have access modifiers whereas interface members cannot have access modifiers.
+iii> Abstract class can have fields where as interfaces cannot have fields.
+iv> An interface can inherit from another interface only and cannot inherit from an abstract class,whereas an 
+abstract class can inherit from another abstract class or another interface.
+v> A class can inherit from multiple interfaces at the same time , whereas a class cannot inherit from multiple 
+abstract classes at same time. 
+
+Ans:-4
+Local variable:- The value stored in a variable can be changed during program execution.
+It does not includes access modifiers such as private, public, protected, etc
+It is important to initialize local variables before use.
+
+Example :--   int area()      
+{    
+        int length = 10; // Local variable          
+        int breadth = 5; // Local variable          
+        int rectarea = length*breadth; // Local variable          
+        return rectarea;          
+}
+
+
+
+Instance Variable:-These variables are usually created when we create an object and 
+are destroyed when the object is destroyed.
+It includes access modifiers such as private, public, protected, etc
+It is not compulsory to initialize instance variables before use.
+
+Example:--   class Taxes  
+{  
+   int count; // Count is an Instance variable  
+   /.../  
+}
+
+Ans:-5
+Encapsulation is the procedure of encapsulating data and functions into a single unit (called class).
+Encapsulation can be implemented i> By declaring the variables as private (to restrict its direct 
+access from outside the class) and 
+ii>By defining one pair of public setter and getter methods or properties to access private variables.
+
+Example:-
+class Account{
+int accountBalance =10000;
+public void SetBalance(int Amount)
+{
+accountBalance=amount;
+}
+public void GetBalance()
+{
+Console.Writeline("Account balance is"+accountBalance);
+
+}
+class program{
+static void Main(String[] args)
+{
+Account myAccount=new Account();
+myAccount.SetBalance(10000);
+Console.ReadLine();
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+Ans:-6
+If derived class defines same method as defined in its base class, it is known as method overriding.
+Methods ahve same name and same signature
+It is used to achieve runtime polymorphism.
+To perform method overriding  we use virtual keyword 
+with base class method and override keyword with derived class method.
+ 
+Example:-
+
+public class A{
+public virtual void a1()
+{
+
+Console.WriteLine("Methof of base class");
+}
+}
+public class B:A
+{
+public  void a2()
+{
+Console.WriteLine("Derived class method");
+}
+
+}
+class C{
+public static void Main(String[] args){
+B b1=new B();
+b1.a1();
+Console.ReadLine();
+}}
