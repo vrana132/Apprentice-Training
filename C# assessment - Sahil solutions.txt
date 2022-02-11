@@ -1,0 +1,91 @@
+Ans 1
+bruteforce answer: there is a syntax error as the class A is not being closed with } bracket.
+optimised answer(consider it as a manual error):
+
+	since all the blocks are static one they are meant to be run even without the main method
+so output would be :
+
+1
+2
+3 
+
+
+
+Ans 2
+class Base {
+	public: void func() { 
+	Console.WriteLine("base class"); 
+	} 
+} 
+
+class Derv : Base {
+	public: void func() { 
+	Console.WriteLine("derived class"); 
+	}
+
+	void xyz() { 
+	Base::func(); 
+	func(); } 
+}
+
+Ans 3
+
+If in a particular class there are more than one method with same name but different 
+parameters(it can be different in the number or type) , this particular concept is 
+known as method overloading.
+ex:
+
+// this example can be optimised using generic 
+class calcluator{
+	public int adder(int a , int b){
+		return a+b;
+	}
+	public int Adder(float a, float b){
+		return a+b
+	}
+}
+
+Ans 4 
+
+Abstract class :
+it can have static members
+it can have different types of access modifiers
+
+interface :
+it can not have static members
+it has only public access modifier
+
+Ans 5 
+
+instance variable dont have a keyword while static variable are defined with a static keyword
+instance variable is created when object is created for that class while static variable are created at the time when program starts
+instance variable are called with object while static are called with class name
+
+class example{
+	int a;		// it is an instance variable
+	static int b;	// it is a static variable
+
+	public static void main(){
+		example object = new example();
+		Console.WriteLine(object.a);//calling of instance variable
+		Console.WriteLine(example.b);//calling of static variable
+	}
+}
+
+Ans 6.
+Encapsulation is one of the key attribute of OOPs. it means binding of all the necessary data variables and methods to be bind together
+in one class.
+
+ex:
+// in this example we are binding all the necessary data and their function(method) into a class.
+class Employee{
+	int id;
+	String name;
+	
+	public void entry(){
+		Console.WriteLine(name + "has entered into office");
+	}
+	public void exit(){
+		Console.WriteLine(name + "is leaving office");
+	}
+}
